@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family= Kdam+Thmor+Pro & display=swap') ;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: black;
+}
+
+
+
+
+/* ESTILIZAÇÃO DA NAVBAR */
+header{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+}
+.logo_flash img{
+    width: 65px;
+    height: auto;
+}
+nav{
+    width: 30%;
+}
+nav ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;  
+}
+nav li{
+    list-style-type: none;
+    text-decoration: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-family: 'Kdam Thmor Pro', sans-serif;  
+}
+nav a{
+    color: red;
+}
+nav a:hover{
+    color: 	gold;
+    transition: 0.4s;
+    text-decoration: underline;
+}
+
+
+
+
+
+/* ESTILIZAÇÃO DO MAIN */
+main{
+    width: 80%;
+    margin: auto;
+}
+/* estilização a página index */
+.banner {
+    background-image: url('https://th.bing.com/th/id/R.ee06bb81ea8c32a7f55dec0cbdb770bb?rik=FY6p7TpuIlAkZQ&pid=ImgRaw&r=0');
+    width: 100%;
+    height: 90vh;
+    background-size: cover; 
+    /* margin: auto; */
+}
+.content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sinopse{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.description{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Kdam Thmor Pro', sans-serif;  
+    width: 80%;
+    text-align: justify;
+}
+.description a{
+    color: rgba(240, 248, 255, 0.555);
+    font-weight: bolder;
+    cursor: pointer;
+}
+.description a:hover{
+    color: 	#cc0000;
+    transition: 0.3s;
+    text-decoration: underline;
+}
+.button{
+    width: 200px;
+    height: 60px;
+    background-color: red;
+    color: #fff;
+    padding: 8px 10px;
+    margin-top: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.7s;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+.button:hover{
+    background-color: #fff;
+    color: red;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    color: #fff;
+    margin-top: 20px;
+}
+.card{
+    width: 15vw;
+    height: 40.7vh;
+    display: flex;
+    flex-direction: column-reverse;
+    background-size: cover;
+    background-attachment: inherit;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.2s;
+}
+.card:hover{
+    transform: scale(1.15);
+}
+.image01{
+    background-image: url('ezra.jpeg');
+}
+.image02{
+    background-image: url('ben_affleck.jpeg');
+}
+.image03{
+    background-image: url('batman.jpg');
+}
+
+
+
+/* Estilizando a página trailes */
+.trailer-container{
+    /* height: 80vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    color: aliceblue;
+}
+.trailer{
+    width: 100%;
+    /* padding: 20px; */
+}
+#trailer01{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#trailer02{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+.teaser01{
+    width: 85vw;
+}
+.teaser02{
+    width: 85vw;
+}
+.balao{
+    background-color: red;
+    width: 100%;
+    height: 22vh;
+    padding: 20px;
+    border-radius: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.balao span, h4{
+    margin-top: 10px;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif; 
+}
+
+
+
+/* Estilizando a página fotos */
+.image-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+.image-container img{
+    width: 15vw;
+}
+.back01{
+    width: 20vw;
+    border: 8px dotted #cc0000;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.back01:hover{
+    transform: scale(1.15);
+}
+.back02{
+    width: 20vw;
+    border: 3px dashed gold;
+    border-radius: 15%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.back02:hover{
+    transform: scale(1.15);
+}
+
+
+/* Estilizando a página contatos */
+.init {
+    color: #fff;
+    text-align: center;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Kdam Thmor Pro', sans-serif; 
+}
+.contact-content{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Kdam Thmor Pro', sans-serif; 
+}
+.contact-page{
+    width: 25vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, #b60f21, #a10712, #8b0003);
+    align-items: center;
+    border: 3px solid gold;
+    border-radius: 15px;
+    color: #fff;
+}
+.contact-page-title{
+    margin-bottom: 10px;
+}
+.contact-page-title h4 {
+    font-size: 18px; 
+}
+.name{
+    display: flex;
+    flex-direction: column;
+}
+.contacts-input input{
+    width: 16vw;
+    border-radius: 6px;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px;
+}
+.contacts-input textarea{
+    border-radius: 6px;
+}
+.contact-page button{
+    cursor: pointer;
+    width: 6vw;
+    height: 2.5vh;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+.contact-page button:hover{
+    background-color: #d0d0d0;
+}
+.dev-contact{
+    width: 25vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 3px solid gold;
+    border-radius: 15px;
+    color: #fff;
+    background-image: linear-gradient(to bottom, #b60f21, #a10712, #8b0003);
+}
+.contact-dev-social-media a{
+    padding-left: 5px;
+    cursor: pointer;
+}
+.contact-dev-social-media a:hover{
+    -webkit-filter: drop-shadow(8px 5px 3px rgb(48, 45, 45));
+    filter: drop-shadow(8px 5px 3px rgb(48, 46, 46));
+}
+.social-media{
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.face, .insta, .twitter{
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-left: 8px;
+
+}
+.social-media img{
+    width: 2vw;
+    margin: auto;
+    padding: 5px;
+}
+.social-media img:hover{
+    -webkit-filter: drop-shadow(5px 3px 1px rgb(48, 45, 45));
+    filter: drop-shadow(5px 3px 1px rgb(48, 46, 46));
+}
+
+
+
+
+
+
+/* ESTILIZAÇÃO DO RODAPÉ */
+footer {
+    margin-top: 30px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.content-footer{
+    display: flex;
+    justify-content: space-around;
+}
+.content_footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.logo_batman img{
+    width: 65px;
+    height: auto;
+}
+.footer-navigation{
+    display: none;
+}
+
+
+
+
+
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px){
+    /* HEADER */
+    header nav{
+        display: none;
+    }
+
+    
+    /* MAIN */
+    main{
+        width: 100%;
+    }
+    /* Página inicio */
+    .banner{
+        background-position: 50%;
+        height: 50vh;
+    }
+    .sinopse{
+        width: 100%;
+    }
+    .description{
+        font-size: 16px;  
+        width: 100%;
+        text-align: justify;
+        padding: 10px;
+    }
+    .button{
+        width: 100%;
+        height: 50px;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .card{
+        width: 100vw;
+        height: 50vh;
+        margin-top: 30px;
+        transition: 0.2s;
+    }
+    /* Página trailers */
+    #trailer01{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .teaser01{
+        width: 100vw;
+    }
+    #trailer02{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .teaser02{
+        width: 100vw;
+    }
+    .balao{
+        width: 100%;
+        height: 30vh;
+        padding: 20px;
+    }
+    .balao02{
+        height: 40vh;
+    }
+    .balao span, h4{
+        font-size: 16px;
+    }
+    /* Página fotos */
+    .image-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; 
+    }
+    .image-container img{
+        width: 65vw;
+    }
+    .back01{
+        width: 90vw;
+    }
+    .back02{
+        width: 90vw;
+    }
+    /* Página contatos */
+    .contact-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-page{
+        width: 98.6vw;
+        height: 50vh;
+        margin: auto;
+    }
+    .contact-page-title{
+        margin-bottom: 10px;
+    }
+    .contact-page-title h4 {
+        font-size: 16px; 
+    }
+    .contacts-input input{
+        width: 95vw;
+        margin: auto;
+    }
+    .msg textarea{
+        width: 95vw;
+    }
+    .contact-page button{
+        width: 30vw;
+        height: 5vh;
+        font-size: 18px;
+    }
+    .dev-contact{
+        width: 98.6vw;
+        height: 50vh;
+        margin: auto;
+        margin-top: 15px;
+    }
+    .face, .insta, .twitter{
+        margin-left: 10px;
+    }
+    .social-media img{
+        width: 8.5vw;
+        padding: 3px;
+    }
+
+
+    /* FOOTER */
+    .footer-navigation{
+        display: block;
+        margin: auto;
+    }
+    .footer-navigation ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
